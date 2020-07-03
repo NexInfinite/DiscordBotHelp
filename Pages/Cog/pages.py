@@ -36,7 +36,7 @@ class Pages(commands.Cog, name="Pages"):
         """Shoe me the Pages!"""
         page_limit = 3  # This variable determines the length of each page! I bet you are happy i told you that!
         current_page = 1  # This variable determines the page it starts off on!!!!!!! Honestly, you'd be lost without me. I'd recommend not changing this because you will have to edit the initial_embed.
-        data = open_json("pages.json")
+        data = open_json("../pages.json")
         pages = math.ceil(len(data) / page_limit)
         initial_embed = discord.Embed(description=f"Page {current_page}", color=discord.Color.dark_blue())
         for x in range(page_limit):
@@ -63,7 +63,7 @@ class Pages(commands.Cog, name="Pages"):
                 current_page = pages
             # Generating the next page embed
             next_page = discord.Embed(description=f"Page {current_page}", color=discord.Color.dark_blue())
-            data = open_json("pages.json")
+            data = open_json("../pages.json")
             for x in range(page_limit * current_page - page_limit,
                            page_limit * current_page):  # That was some cool and epic maths
                 try:
@@ -81,9 +81,9 @@ class Pages(commands.Cog, name="Pages"):
             "name": name,
             "description": description
         }
-        data = open_json("pages.json")
+        data = open_json("../pages.json")
         data.append(new_item)
-        save_json(data, "pages.json")
+        save_json(data, "../pages.json")
         embed = discord.Embed(color=discord.Color.dark_blue())
         embed.set_author(name="Item has been added.")
         await ctx.send(embed=embed)
