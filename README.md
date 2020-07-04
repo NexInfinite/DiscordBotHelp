@@ -9,12 +9,12 @@ Little templates and helpful pieces of code i have made over the years. I've bee
 - [x] [Error handling](Error%20Handling)
 - [x] [Second Keyboard Tutorial](2nd%20Keyboard%20Shortcuts)
 - [x] [A better help command](Help%20Command) (An edited version of [this repo](https://gist.github.com/StudioMFTechnologies/ad41bfd32b2379ccffe90b0e34128b8b) by StudioMFTechnologies)
-- [ ] Music Commands
+- [ ] Music Commands (Coming soon)
 
 
 ### Tips and Tricks
 - [x] [On Message and Commands](Tips%20and%20Tricks#on-message-and-commands)
-- [ ] [Timers](Tips%20and%20Tricks#timers)
+- [x] [Timers](Tips%20and%20Tricks#timers)
 
 # About me
 I have been coding for many years. I used to make twitch bots but now I make professional discord bots on [fiverr](https://www.fiverr.com/nex_infinite).
