@@ -9,7 +9,7 @@ It is always useful to have an `on_message` listener when making complicated bot
 await bot.process_commands(message)
 ```
 
-### Example:
+### Example
 ```python
 from discord.ext import commands
 import discord
@@ -59,7 +59,7 @@ async def loop():
 bot.run("YOUR TOKEN")
 ```
 
-### Examples
+### Example
 ```python
 import discord
 from discord.ext import tasks, commands
