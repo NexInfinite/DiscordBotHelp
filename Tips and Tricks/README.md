@@ -9,7 +9,7 @@ It is always useful to have an `on_message` listener when making complicated bot
 await bot.process_commands(message)
 `
 <br>
-#### Example:
+### Example:
 ```python
 from discord.ext import commands
 
