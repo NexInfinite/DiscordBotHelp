@@ -11,6 +11,7 @@ Little templates and helpful pieces of code i have made over the years. I've bee
 - [x] [A better help command](Help%20Command) (An edited version of [this repo](https://gist.github.com/StudioMFTechnologies/ad41bfd32b2379ccffe90b0e34128b8b) by StudioMFTechnologies)
 - [x] [Webhooks](Webhooks)
 - [x] [Changeable Prefixes](Changeable%20Prefixes)
+- [x] [Join and Leave Messages](Join%20and%20Leave%20Messages) (Added by FigmentBoy)
 - [ ] Music Commands
 
 
