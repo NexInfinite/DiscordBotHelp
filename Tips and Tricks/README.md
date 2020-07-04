@@ -12,6 +12,7 @@ await bot.process_commands(message)
 ### Example:
 ```python
 from discord.ext import commands
+import discord
 
 bot = commands.Bot(command_prefix="!", case_insensitive=True)
 
@@ -20,6 +21,14 @@ async def on_message(message):
     if message.author != bot.user:
         # Add the users points up
         await bot.process_commands(message)
+
+@commands.command(name="hey")
+async def hey(ctx):
+    """A command that says 'hey'"""
+    embed = discord.Embed(description=f"This command says hello to you!", 
+                          color=discord.Color.dark_blue())
+    embed.set_author(name=f"Hey!")
+    await ctx.send(embed=embed) 
 ```
 
 # Timers
