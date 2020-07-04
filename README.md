@@ -9,4 +9,5 @@ Little templates and helpful pieces of code i have made over the years. I've bee
 - [x] [Error handling](Error%20Handling)
 - [x] [Second Keyboard Tutorial](2nd%20Keyboard%20Shortcuts)
 - [ ] [Tips and Tricks](Tips%20and%20Tricks)
-    - [ ] [On Message and Commands](Tips%20and%20Tricks#on-message-and-commands)
+    - [x] [On Message and Commands](Tips%20and%20Tricks#on-message-and-commands)
+    - [ ] Timers
