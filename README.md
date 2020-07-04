@@ -9,6 +9,7 @@ Little templates and helpful pieces of code i have made over the years. I've bee
 - [x] [Error handling](Error%20Handling)
 - [x] [Second Keyboard Tutorial](2nd%20Keyboard%20Shortcuts)
 - [x] [A better help command](Help%20Command) (An edited version of [this repo](https://gist.github.com/StudioMFTechnologies/ad41bfd32b2379ccffe90b0e34128b8b) by StudioMFTechnologies)
+- [ ] Music Commands
 
 
 ### Tips and Tricks
