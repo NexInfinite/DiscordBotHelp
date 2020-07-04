@@ -6,7 +6,7 @@ Little templates and helpful pieces of code i have made over the years. I've bee
 - [x] [Pages](Pages)
 - [x] [Cog template](Cog%20Template)
 - [x] [Json commands](Json%20Commands)
-- [x] [Error handling](Error%20Handling)
+- [x] [Error handling](Error%20Handling) (An edited version of [this repo](https://gist.github.com/AileenLumina/510438b241c16a2960e9b0b014d9ed06) by AileenLumina)
 - [x] [Second Keyboard Tutorial](2nd%20Keyboard%20Shortcuts)
 - [x] [A better help command](Help%20Command) (An edited version of [this repo](https://gist.github.com/StudioMFTechnologies/ad41bfd32b2379ccffe90b0e34128b8b) by StudioMFTechnologies)
 - [ ] Music Commands (Coming soon)
