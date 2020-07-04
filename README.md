@@ -9,7 +9,8 @@ Little templates and helpful pieces of code i have made over the years. I've bee
 - [x] [Second Keyboard Tutorial](2nd%20Keyboard%20Shortcuts)
 - [x] [Error handling](Error%20Handling) (An edited version of [this repo](https://gist.github.com/AileenLumina/510438b241c16a2960e9b0b014d9ed06) by AileenLumina)
 - [x] [A better help command](Help%20Command) (An edited version of [this repo](https://gist.github.com/StudioMFTechnologies/ad41bfd32b2379ccffe90b0e34128b8b) by StudioMFTechnologies)
-- [ ] Music Commands (Coming soon)
+- [ ] Music Commands
+- [ ] Webhooks
 
 
 ### Tips and Tricks
