@@ -8,6 +8,8 @@ Little templates and helpful pieces of code i have made over the years. I've bee
 - [x] [Json commands](Json%20Commands) (Very rough but it works)
 - [x] [Error handling](Error%20Handling)
 - [x] [Second Keyboard Tutorial](2nd%20Keyboard%20Shortcuts)
-- [ ] [Tips and Tricks](Tips%20and%20Tricks)
-    - [x] [On Message and Commands](Tips%20and%20Tricks#on-message-and-commands)
-    - [ ] [Timers](Tips%20and%20Tricks#timers)
+
+
+### Tips and Tricks
+- [x] [On Message and Commands](Tips%20and%20Tricks#on-message-and-commands)
+- [ ] [Timers](Tips%20and%20Tricks#timers)
