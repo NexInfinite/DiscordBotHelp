@@ -1,15 +1,21 @@
-# Welcome
+# Tips and Tricks
+
+## Welcome
+
 These are some of the tips and tricks I have learnt. Below contains code snippets and explanations on how these work and examples of how to use them. Enjoy!
 
-# On Message and Commands
-It is always useful to have an `on_message` listener when making complicated bots. This can be used for logging commands into a channel or for a point system for each user where it tracks their messages. This can be all good until you realise that if you have `on_message` and `commands.command()` the commands wont work. A simple work around for this is:
-<br>
-<br>
+## On Message and Commands
+
+It is always useful to have an `on_message` listener when making complicated bots. This can be used for logging commands into a channel or for a point system for each user where it tracks their messages. This can be all good until you realise that if you have `on_message` and `commands.command()` the commands wont work. A simple work around for this is:   
+   
+
+
 ```python
 await bot.process_commands(message)
 ```
 
 ### Example
+
 ```python
 from discord.ext import commands
 import discord
@@ -33,10 +39,13 @@ async def hey(ctx):
 bot.run("YOUR TOKEN")
 ```
 
-# Timers
-Timers are very useful for simple rss feeds and changing playing statuses. Luckily, there are built in to discord.ext and so here is how to use them and some examples of timers (known in disord.ext as tasks).
-<br>
+## Timers
+
+Timers are very useful for simple rss feeds and changing playing statuses. Luckily, there are built in to discord.ext and so here is how to use them and some examples of timers \(known in disord.ext as tasks\).   
+
+
 ### Simple layout
+
 ```python
 from discord.ext import tasks, commands
 import asyncio
@@ -60,6 +69,7 @@ bot.run("YOUR TOKEN")
 ```
 
 ### Example
+
 ```python
 import discord
 from discord.ext import tasks, commands
@@ -85,3 +95,4 @@ async def status_loop():
 
 bot.run("YOUR TOKEN")
 ```
+
