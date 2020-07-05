@@ -9,20 +9,20 @@ Little templates and helpful pieces of code i have made over the years. I've bee
 ### Code/Tutorials
 
 * [x] [Pages](Pages/README.md)
-* [x] [Cog template](Cog Template/README.md)
-* [x] [Json commands](Json Commands/README.md)
-* [x] [Second Keyboard Tutorial](2nd Keyboard Shortcuts/README.md)
-* [x] [Error handling](Error Handling/README.md) \(An edited version of [this repo](https://gist.github.com/AileenLumina/510438b241c16a2960e9b0b014d9ed06) by AileenLumina\)
-* [x] [A better help command](Help Command/README.md) \(An edited version of [this repo](https://gist.github.com/StudioMFTechnologies/ad41bfd32b2379ccffe90b0e34128b8b) by StudioMFTechnologies\)
+* [x] [Cog template](Cog%20Template/README.md)
+* [x] [Json commands](Json%20Commands/README.md)
+* [x] [Second Keyboard Tutorial](2nd%20Keyboard%20Shortcuts/README.md)
+* [x] [Error handling](Error%20Handling/README.md) \(An edited version of [this repo](https://gist.github.com/AileenLumina/510438b241c16a2960e9b0b014d9ed06) by AileenLumina\)
+* [x] [A better help command](Help%20Command/README.md) \(An edited version of [this repo](https://gist.github.com/StudioMFTechnologies/ad41bfd32b2379ccffe90b0e34128b8b) by StudioMFTechnologies\)
 * [x] [Webhooks](Webhooks/README.md)
-* [x] [Changeable Prefixes](Changeable Prefixes/README.md)
-* [x] [Join and Leave Messages](Join and Leave Messages/README.md) \(Added by FigmentBoy\)
+* [x] [Changeable Prefixes](Changeable%20Prefixes/README.md)
+* [x] [Join and Leave Messages](Join%20and%20Leave Messages/README.md) \(Added by FigmentBoy\)
 * [ ] Music Commands
 
 ### Tips and Tricks
 
-* [x] [On Message and Commands](Tips and Tricks/README.md#on-message-and-commands)
-* [x] [Timers](Tips and Tricks/README.md#timers)
+* [x] [On Message and Commands](Tips%20and%20Tricks/README.md#on-message-and-commands)
+* [x] [Timers](Tips%20and%20Tricks/README.md#timers)
 
 ## About me
 
