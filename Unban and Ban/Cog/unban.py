@@ -7,10 +7,15 @@ class Unban(commands.Cog, name="Unban"):
         self.bot = bot
 
     @commands.command(name="unban")
-    async def unban(self, ctx, user: discord.User, reason=None):
+    async def unban(self, ctx, member, *, reason=None):
         """Unban a user"""
-        await ctx.guild.unban(user, reason=reason)
-        await ctx.send(f"{user.mention} has been unbanned!")
+        banned_users = await ctx.guild.bans()
+        for ban_entry in banned_users:
+            user = ban_entry.user
+            if user.name.lower() == member.lower():
+                await ctx.guild.unban(user, reason=reason)
+                await ctx.send(f'{user.name} was unbanned')
+                return
 
 
 def setup(bot):
