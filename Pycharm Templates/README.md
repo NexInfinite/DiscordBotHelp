@@ -3,7 +3,6 @@ These are some templates that take advantage of pycharm's template variables.
 
 # Tutorial
 1. When you have pycharm open, go to:
-<br>
 ``File > Settings > Editor > File and Code templates``  (Ctrl + Alt + S is a shortcut for settings)
 2. Click the + icon 
 3. Name it and change the extension to ``py``
