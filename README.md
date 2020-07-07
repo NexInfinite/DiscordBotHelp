@@ -22,7 +22,7 @@ Little templates and helpful pieces of code i have made over the years. I've bee
     * [x] [Main](Pycharm%20Templates/main.txt)
 * [x] [Admin Commands](Admin%20Commands)
     * [x] [Unban and Ban](Admin%20Commands/Unban%20and%20Ban)
-    * [ ] Kick
+    * [x] [Kick](Admin%20Commands/Kick)
     * [ ] Warn system
 * [ ] Music Commands
 
