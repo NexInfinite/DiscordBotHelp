@@ -23,7 +23,7 @@ Little templates and helpful pieces of code i have made over the years. I've bee
 * [x] [Admin Commands](Admin%20Commands)
     * [x] [Unban and Ban](Admin%20Commands/Unban%20and%20Ban)
     * [x] [Kick](Admin%20Commands/Kick)
-    * [ ] Warn system
+    * [x] [Warn system](Admin%20Commands/Warn%20system)
 * [ ] Music Commands
 
 ### Tips and Tricks
