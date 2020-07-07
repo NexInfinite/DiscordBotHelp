@@ -17,7 +17,13 @@ Little templates and helpful pieces of code i have made over the years. I've bee
 * [x] [Webhooks](Webhooks)
 * [x] [Changeable Prefixes](Changeable%20Prefixes)
 * [x] [Join and Leave Messages](Join%20and%20Leave%20Messages) \(Added by FigmentBoy\)
-* [x] [Unban and Ban](Unban%20and%20Ban)
+* [x] [Pycharm Templates](Pycharm%20Templates)
+    * [x] [Cog](Pycharm%20Templates/Cog%20Template.txt)
+    * [x] [Main](Pycharm%20Templates/main.txt)
+* [x] [Admin Commands](Admin%20Commands)
+    * [x] [Unban and Ban](Admin%20Commands/Unban%20and%20Ban)
+    * [ ] Kick
+    * [ ] Warn system
 * [ ] Music Commands
 
 ### Tips and Tricks
