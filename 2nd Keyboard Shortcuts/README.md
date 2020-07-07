@@ -12,9 +12,9 @@ The basic setup has now been installed!
 
 ## Other Information
 
-The code I have provided above uses they keys \, z, x, c, LeftArrow, RightArrow.
+The code I have provided above uses they keys \\, z, x, c, LeftArrow, RightArrow.
 
-*  sends the  key \(My main keyboard doesnt have this button\)
+* \\ sends the  key \(My main keyboard doesnt have this button\)
 * z sends \n 
 * x sends multiple keys that makes an embed.
 * c sends the embed add\_field
