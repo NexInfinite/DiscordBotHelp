@@ -1,0 +1,12 @@
+import discord
+from discord.ext import commands
+
+
+class ${NAME}(commands.Cog, name="$Title"):
+    """$Description"""
+    def __init__(self, bot):
+        self.bot = bot
+
+
+def setup(bot):
+    bot.add_cog(${NAME}(bot))
