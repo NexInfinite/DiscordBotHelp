@@ -7,7 +7,7 @@ from discord.ext import commands
 # Before reading:
 # It is worth learning a little bit about how Cogs work and how discord.py works. If you have some basic knowledge; this should be useful for you.
 # It is also worthy noting that my comments are a little M A D so prepare yourself for some epic and cool comments.
-# OH! Its also worth nothing (yes it is worth it) that the way this works is by reading from the Pages.json file.
+# OH! Its also worth noting (yes it is worth it) that the way this works is by reading from the Pages.json file.
 
 
 # The definitions below are a snippet of my json_commands.py file. You can just add:
