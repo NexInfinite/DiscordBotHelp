@@ -2,7 +2,8 @@ import discord
 from discord.ext import commands, tasks
 import json
 import asyncio
-
+from datetime import datetime
+from datetime import timedelta
 
 class warn(commands.Cog, name="warn"):
     """Warn users"""
@@ -46,9 +47,11 @@ class warn(commands.Cog, name="warn"):
                 with open("warns.json", "w") as f:
                     json.dump(data, f, indent=2)
                 return
+        now = datetime.now() + timedelta(days=1)
         new_user = {
             "user_id": user.id,
-            "warns": 1
+            "warns": 1,
+            "warn_time": now.strftime("%m/%d/%Y")
         }
         data.append(new_user)
         with open("warns.json", "w") as f:
@@ -100,6 +103,22 @@ class warn(commands.Cog, name="warn"):
         embed = discord.Embed(color=discord.Color.dark_blue())
         embed.set_author(name=f"You have no warnings")
         await ctx.send(embed=embed)
+
+    @commands.Cog.listener()
+    async def on_message(self, message):
+        with open("warns.json") as f:
+            data = json.load(f)
+        for user in data:
+            if user["user_id"] == message.author.id:
+                if user["warns"] == 0:
+                    now = datetime.now()
+                    end = datetime.strptime(user["warn_time"], "%m/%d/%Y")
+                    if now > end:
+                        data.remove(user)
+                        with open("warns.json", "w") as f:
+                            json.dump(data, f, indent=2)
+                        print(f"Removed {user.id} from the warn list to save data")
+
 
 
 def setup(bot):
