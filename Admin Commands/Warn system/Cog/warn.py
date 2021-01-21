@@ -109,15 +109,14 @@ class warn(commands.Cog, name="warn"):
         with open("warns.json") as f:
             data = json.load(f)
         for user in data:
-            if user["user_id"] == message.author.id:
-                if user["warns"] == 0:
-                    now = datetime.now()
-                    end = datetime.strptime(user["warn_time"], "%m/%d/%Y")
-                    if now > end:
-                        data.remove(user)
-                        with open("warns.json", "w") as f:
-                            json.dump(data, f, indent=2)
-                        print(f"Removed {user.id} from the warn list to save data")
+            if user["warns"] == 0:
+                now = datetime.now()
+                end = datetime.strptime(user["warn_time"], "%m/%d/%Y")
+                if now > end:
+                    data.remove(user)
+                    with open("warns.json", "w") as f:
+                        json.dump(data, f, indent=2)
+                    print(f"Removed {user.id} from the warn list to save data")
 
 
 
