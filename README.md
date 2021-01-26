@@ -43,5 +43,5 @@ I have been coding for many years. I used to make twitch bots but now I make pro
 
 I've got to the stage where I feel comfortable saying that I know what im doing and so I have decided to share all my knowledge to everyone else. I hope you can find something useful out of my organized mess.
 
-The above messages where written before discord banned me for the 2nd time, I do have more public bots including angry gamer butthey have not been verified as of yet and are stuck at 100 guilds. I am still working on this, just don't fully know what to add to it other than music commands (which is done I just haven't updated this yet). 
+The above messages where written before discord banned me for the 2nd time, I do have more public bots including angry gamer butthey have not been verified as of yet and are stuck at 100 guilds. I am still working on this, just don't fully know what to add to it other than music commands (which is done I just haven't updated this yet). Thanks for issues; will be fixing soon :D
 
