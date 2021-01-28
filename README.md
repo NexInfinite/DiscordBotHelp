@@ -26,7 +26,7 @@ Little templates and helpful pieces of code i have made over the years. I've bee
     * [x] [Unban and Ban](Admin%20Commands/Unban%20and%20Ban)
     * [x] [Kick](Admin%20Commands/Kick)
     * [x] [Warn system](Admin%20Commands/Warn%20system)
-* [ ] Music Commands (I had the code then lost it ;-;)
+* [ ] Music Commands (I had the code then lost it ;-; very nearly done)
 
 ### Tips and Tricks
 
