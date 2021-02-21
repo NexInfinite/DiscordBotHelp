@@ -3,6 +3,8 @@ from discord.ext import commands
 
 from json_commands import *
 
+import json
+
 
 class Prefix(commands.Cog,name='prefix'):
     """Change your bots prefix for servers"""
