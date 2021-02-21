@@ -13,7 +13,7 @@ class Prefix(commands.Cog,name='prefix'):
         with open('prefixes.json') as f:
             self.prefixes = json.load(f)
         self.bot.command_prefix = self.get_prefix
-        self.default_prefix = 'tp!'
+        self.default_prefix = '!'
         
     def get_prefix(self, bot, message):
         prefix = self.prefixes.get(str(message.guild.id), self.default_prefix) if getattr(message, 'guild', None) else self.default_prefix
