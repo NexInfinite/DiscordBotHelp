@@ -4,30 +4,40 @@ from discord.ext import commands
 from json_commands import *
 
 
-class Prefix(commands.Cog, name="Prefix"):
+class Prefix(commands.Cog,name='prefix'):
+    """Change your bots prefix for servers"""
     def __init__(self, bot):
         self.bot = bot
+        with open('prefixes.json') as f:
+            self.prefixes = json.load(f)
+        self.bot.command_prefix = self.get_prefix
+        self.default_prefix = 'tp!'
+        
+    def get_prefix(self, bot, message):
+        prefix = self.prefixes.get(str(message.guild.id), self.default_prefix) if getattr(message, 'guild', None) else self.default_prefix
+        return commands.when_mentioned_or(prefix)(bot, message)
+    @commands.command()
+    @commands.cooldown(1, 5, commands.BucketType.user)
+    async def setprefix(self, ctx, *, new=None):
+        no_prefix = discord.Embed(title="Please put a prefix you want.", colour=ColorYouWant)
+        if not new:
+            return await ctx.send(embed=no_prefix)
+        self.prefixes[str(ctx.guild.id)] = new
+        with open('prefixes.json', 'w') as f:
+            json.dump(self.prefixes, f, indent=4)
+        new_prefix = discord.Embed(description=f"The new prefix is `{new}`", color=ColorYouWant, timestamp=ctx.message.created_at)
+        await ctx.send(embed=new_prefix)
+        await ctx.guild.me.edit(nick=f'[{new}] AGB')
 
-    @commands.command(name="prefix")
-    async def change_prefix(self, ctx, *, new_prefix: str = None):
-        """Change the prefix of the bot for your server."""
+    @commands.command()
+    @commands.cooldown(1, 5, commands.BucketType.user)
+    async def prefix(self, ctx):
         with open("prefixes.json") as f:
             prefixes = json.load(f)
-
-        if new_prefix is None:
-            embed = discord.Embed(color=discord.Color.dark_blue())
-            embed.set_author(name=f"The prefix is {prefixes[str(ctx.guild.id)]}")
-            await ctx.send(embed=embed)
-        else:
-            prefixes[str(ctx.guild.id)] = new_prefix
-
-            with open("prefixes.json", "w") as f:
-                json.dump(prefixes, f, indent=2)
-
-            embed = discord.Embed(description=f"The new prefix is `{new_prefix}`",
-                                  color=discord.Color.dark_blue())
-            embed.set_author(name=f"Prefix changed!")
-            await ctx.send(embed=embed)
+        embed = discord.Embed(colour=ColorYouWant, timestamp=ctx.message.created_at)
+        embed.add_field(name="Prefix for this server:", value=f"{prefixes[str(ctx.guild.id)]}")
+        embed.set_footer(text=f"Command passed by: {ctx.author}", icon_url=ctx.author.avatar_url)
+        await ctx.send(embed=embed)
 
 
 def setup(bot):
