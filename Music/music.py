@@ -14,8 +14,8 @@ YOUTUBE_SEARCH_ENDPOINT = 'https://www.googleapis.com/youtube/v3/search?part=sni
 YOUTUBE_SONG_URL = 'https://www.youtube.com/watch?v={0}'
 FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5',
                               'options': '-vn'}
-SPOTIFY_CLIENT_ID = '00f2564d102142fbb5d9229533aede9e'
-SPOTIFY_CLIENT_SECRET = 'dbdb32a313a047db851ff02448a9b6d3'
+SPOTIFY_CLIENT_ID = 'Your Client_ID (Warning this doesnt work so it doesnt matter)'
+SPOTIFY_CLIENT_SECRET = 'Your Client_Secret (Warning this doesnt work so it doesnt matter)'
 
 
 
