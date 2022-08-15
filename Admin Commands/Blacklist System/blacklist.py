@@ -63,5 +63,5 @@ class Blacklist(commands.Cog,name='blacklist',command_attrs=dict(hidden=True)):
             json.dump(self.blacklist, f)
         await ctx.send("Blacklist cleared")
 
-def setup(bot):
-    bot.add_cog(Admin(bot))
+async def setup(bot):
+    await bot.add_cog(Blacklist(bot))
