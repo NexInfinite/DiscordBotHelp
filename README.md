@@ -1,3 +1,6 @@
+# WARNING
+> Not been updated since 2022, will be out of date sorry.
+
 # Welcome
 > Please suggest things by making an issue; I can make a lot of things so its hard to tell what people will want
 
